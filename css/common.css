@@ -72,7 +72,7 @@ header {
     justify-content: space-between;
 }
 
-header h1 a img {
+header h1ul img {
     width: 160px;
     display: block;
     padding-bottom: 5px;
@@ -104,7 +104,7 @@ header nav .nav_menu {
     height: 60px;
 }
 
-.nav_menu a {
+.nav_menuul {
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
@@ -114,16 +114,17 @@ header nav .nav_menu {
     width: fit-content;
     color: #47433f;
     height: 100%;
+    padding-top: 4px;
     box-sizing: border-box;
+    border-bottom: 4px solid transparent; /* 기본적으로 투명한 보더 설정 */
 }
 
-.nav_menu > li:hover a {
-   
-    border-bottom: 4px solid var(--main-pink1); 
+.nav_menu > li:hoverul {
+    border-bottom-color: var(--main-pink1); /* hover 시 색상만 변경 */
 }
 
 
-.nav_menu a span {
+.nav_menuul span {
     font-family: "Jost-Medium";
     font-size: 16px;
     letter-spacing: 0.04rem;
@@ -159,7 +160,7 @@ header nav .nav_menu {
     padding: 15px 0;
 }
 
-.submenu li a {
+.submenu liul {
     display: block;
     text-decoration: none;
     text-align: left;
@@ -338,9 +339,17 @@ footer .guide p {
     font-size: 13px;
 }
 
-footer .guide a {
+footer .guideul {
     font-size: 12px;
     border-bottom: 1px solid #47433f;
+}
+
+.toggle.active ul {
+    display: block; /* 기본적으로 숨겨진 ul을 보이도록 설정 */
+}
+
+.toggle ul {
+    display: none; /* 기본적으로 숨겨져 있게 설정 */
 }
 
 .header_mo {
@@ -395,10 +404,10 @@ footer .guide a {
     .header_mo .icons .icon img{
         width: 27px;
     }
-    header h1 a img {
+    header h1ul img {
         width: 60px;
     }
-    .header_mo li a {
+    .header_mo liul {
         width: unset;
         text-align: left;
     }
@@ -470,7 +479,7 @@ footer .guide a {
         align-items: flex-start;
         margin-bottom: 40px !important;
     }
-    .nav_menu:last-child li a {
+    .nav_menu:last-child liul {
         font-family: "Jost-Regular";
     }
     .nav_menu .submenu {
@@ -495,21 +504,21 @@ footer .guide a {
     .nav_menu li:last-child {
         border-bottom: none;
     }
-    .nav_menu li a {
+    .nav_menu liul {
         display: block;
         font-size: 15px;
         color: #505050;
         padding: 0;
         font-family: "Jost-Medium";
     }
-    .nav_menu .submenu_list a {
+    .nav_menu .submenu_listul {
         display: block;
         font-size: 15px;
         color: #505050;
         padding: 0;
         font-family: "Jost-Regular";
     }
-    .nav_menu li a span {
+    .nav_menu liul span {
         font-family: "Jost-Thin";
     }
  
@@ -563,7 +572,7 @@ footer .guide a {
         font-size: 13px;
     }
     
-    .footer_mo .link_info a {
+    .footer_mo .link_infoul {
         font-size: 11px;
     }
     .footer_mo .link_info ul {
