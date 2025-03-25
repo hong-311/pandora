@@ -7,8 +7,7 @@
         <a href="#" class="join">JOIN NOW</a>
     </section>
     <section class="cs">
-  
-        <div class="service">
+        <div class="toggle">
             <p class="title">Customer Service</p>
             <ul>
                 <li><a href="#">공지사항</a></li>
@@ -20,7 +19,7 @@
                 <li><a href="#">문의하기</a></li>
             </ul>
         </div>
-        <div class="account">
+        <div class="toggle">
             <p class="title">Account</p>
             <ul>
                 <li><a href="#">로그인</a></li>
@@ -29,14 +28,14 @@
                 <li><a href="#">배송조회</a></li>
             </ul>
         </div>
-        <div class="about">
+        <div class="toggle">
             <p class="title">About Pandora</p>
             <ul>
                 <li><a href="#">브랜드 알아보기</a></li>
                 <li><a href="#">연혁</a></li>
             </ul>
         </div>
-        <div class="legal">
+        <div class="toggle">
             <p class="title">Legal</p>
             <ul>
                 <li><a href="#">회원정책</a></li>
@@ -53,41 +52,70 @@
 </footer>
 
 <footer class="footer_mo">
+    <section class="info">
+        <pre>(주)스타럭스 | 대표이사 : 안종훈 | 사업자 등록번호 : 120-86-24028 | 통신판매업등록번호 : 서울 강남 - 4364호
+            서울특별시 강남구 삼성로 561 스타럭스빌딩 | 1688-5501
+            E-Mail : 판도라 공식 온라인몰 (pandoracs@starluxe.co.kr) | 개인정보보호책임자 : 안종훈 pandoracs@starluxe.co.kr
+        </pre>
+        <a href="#" class="join">JOIN NOW</a>
+    </section>
     <section class="cs">
-        <div class="company_info">
-            <p class="title">
-                <img src="./img/footer_logo.png" class="footer_logo" alt="로고">
-            </p>
+        <div class="toggle">
+            <p class="title">Customer Service</p>
             <ul>
-                <li>상호 주식회사 소셜라우더&nbsp;&nbsp;&nbsp;사업자등록번호 658-88-02426</li>
-                <li>대표 손나래 최동인&nbsp;&nbsp;&nbsp;통신판매업 신고 신고준비중</li>
-                <li>주소 서울특별시 강남구 도산대로59길 26 (청담동) 히든힐하우스 2층</li>
-                <li>전화 02-515-2622&nbsp;&nbsp;&nbsp;개인정보보호책임자 이시몽 (help@sociallouder.co.kr)</li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주하는 질문</a></li>
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">상품 관리법</a></li>
+                <li><a href="#">품질보증</a></li>
+                <li><a href="#">사이즈 가이드</a></li>
+                <li><a href="#">문의하기</a></li>
             </ul>
         </div>
-        <div class="info_wrap">
-            <div class="cs_info">
-                <p class="title">C <span>/</span> S</p>
-                <ul>
-                    <li class="tel">02-515-2622</li>
-                    <li>09:00~18:00, 토일 공휴일</li>
-                </ul>
-            </div>
-            <div class="follow_info">
-                <p class="title">FOLLOW</p>
-                <ul>
-                    <li><a href="#">INSTAGRAM</a></li>
-                    <li><a href="#">KAKAO</a></li>
-                    <li><a href="#">YOUTUBE</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="link_info">
+        <div class="toggle">
+            <p class="title">Account</p>
             <ul>
-                <li><a href="#">이용안내</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">위시리스트</a></li>
+                <li><a href="#">배송조회</a></li>
+            </ul>
+        </div>
+        <div class="toggle">
+            <p class="title">About Pandora</p>
+            <ul>
+                <li><a href="#">브랜드 알아보기</a></li>
+                <li><a href="#">연혁</a></li>
+            </ul>
+        </div>
+        <div class="toggle">
+            <p class="title">Legal</p>
+            <ul>
+                <li><a href="#">회원정책</a></li>
+                <li><a href="#">배송 및 교환 정책</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
                 <li><a href="#">이용약관</a></li>
-                <li><a href="#">개인정보취급방침</a></li>
             </ul>
         </div>
     </section>
+    <div class="guide">
+        <p>© ALL RIGHTS RESERVED 2024 Pandora</p>
+        <a href="#">서비스가입사실확인</a>
+    </div>
 </footer>
+
+<script>
+window.onload = function() {
+    const toggleItems = document.querySelectorAll('.toggle');
+
+    // 각 toggle 항목에 대해 클릭 이벤트 추가
+    toggleItems.forEach(function(item) {
+        // toggle 항목의 제목을 클릭했을 때 이벤트 처리
+        item.querySelector('.title').addEventListener('click', function() {
+            // 클릭된 항목에 'active' 클래스 토글
+            item.classList.toggle('active');
+        });
+    });
+};
+</script>
+    
